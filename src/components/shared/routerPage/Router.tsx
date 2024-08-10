@@ -1,5 +1,5 @@
-import Head from "../../organisms/head/head";
-import Foot from "../../organisms/foot/foot";
+import { Foot } from "../../templates/foot/foot";
+import { Head  } from "../../templates/head/head";
 import RootRouter from "../router/RootRouter";
 
 const Routers = () => {

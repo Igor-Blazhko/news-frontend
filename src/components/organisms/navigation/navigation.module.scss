@@ -1,0 +1,41 @@
+header > nav.links {
+    display: flex;
+    align-items: center;
+
+    & ul{
+     list-style-type: none;
+    }
+
+    & a {
+        outline: none;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    
+    & a:hover {
+        color: #b6b2b2;
+
+        &::after{
+            width: 100%;
+        }
+    } 
+    & a::after{
+        display: block;
+        content: '';
+        background-color: #fff;
+        height: 1px;
+        transition: all 0.5s;
+        width: 0%;
+    }
+
+}
+
+@keyframes slice {
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 100%;
+    }
+}

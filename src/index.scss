@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header{
+    min-height: 50px;
+    height: 50px;
+    box-sizing: border-box;
+}
+
+main{
+    min-height: calc(100vh - 100px);
+    overflow: auto;
+}
+
+footer{
+    box-sizing: border-box;
+    height: 50px;
+    min-height: 50px;
+}
+
+@import url('./components/templates/head/head.module.scss');
+
+@import url('./components/organisms/navigation/navigation.module.scss');
+@import url('./components/organisms/logo/logo.module.scss');
+
+@import url('./components/atoms/button/button.module.scss');
+
+
+@import url('./components/templates/foot/foot.module.scss');

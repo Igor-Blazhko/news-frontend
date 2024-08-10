@@ -1,4 +1,4 @@
-import { Filter } from "../constants/filter";
+import { Filter } from "./filter";
 
 
 const base =  'http://127.0.0.1:5000/'

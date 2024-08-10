@@ -1,7 +1,8 @@
 export const enum Path{
     main = '*',
     posts = '*',
-    auth = 'auth',
+    authLogIn = 'logIn',
+    authSignIn = 'signIn',
     post = 'post',
     createPost = 'createPost',
     profile = 'profile',

@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom"
+
+import { MyLink } from "../../atoms/link/link"
 import { Path } from "../../shared/constants/routerPath"
 import styles from './navigation.module.scss'
 
@@ -7,7 +8,7 @@ export const Navigation = () => {
         <nav className={styles.links}>
             <ul>
                 <li>
-                    <Link to = {Path.main}>Главная</Link>
+                    <MyLink to = {Path.main}>Главная</MyLink>
                 </li>
             </ul>
         </nav>

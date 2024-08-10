@@ -1,6 +1,6 @@
-import { Foot } from "../../templates/foot/foot";
-import { Head  } from "../../templates/head/head";
-import RootRouter from "../router/RootRouter";
+import { Foot } from "../templates/foot/foot";
+import { Head  } from "../templates/head/head";
+import RootRouter from "../shared/router/RootRouter";
 
 const Routers = () => {
     return(

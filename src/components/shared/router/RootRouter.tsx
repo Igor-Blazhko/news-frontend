@@ -13,7 +13,8 @@ const RootRouter = () => {
         <>
             <Routes>
                 <Route path = {Path.main} element = {<Posts/>}/>
-                <Route path = {Path.auth} element = {<Auth/>}/>
+                <Route path = {Path.authLogIn} element = {<Auth isLogin = {true}/>}/>
+                <Route path = {Path.authSignIn} element = {<Auth isLogin = {false}/>}/>
                 <Route path = {Path.post + '/:id'} element = {<Post/>}/>
             </Routes>
             <WithAuth>

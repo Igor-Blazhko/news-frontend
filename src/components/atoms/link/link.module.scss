@@ -1,0 +1,22 @@
+.link{
+    
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    
+    &:hover {
+        color: #b6b2b2;
+
+        &::after{
+            width: 100%;
+        }
+    } 
+    &::after{
+        display: block;
+        content: '';
+        background-color: #fff;
+        height: 1px;
+        transition: all 0.5s;
+        width: 0%;
+    }
+}

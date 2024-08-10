@@ -1,7 +1,10 @@
-const Auth = () => {
+import { FC } from "react";
+import { AuthBlock } from "../templates/authorize/authTemp";
+
+const Auth: FC<{isLogin: boolean}> = ({isLogin}) => {
     return(
         <>
-            posts
+           <AuthBlock isLogin = {isLogin}/>
         </>
     )
 };

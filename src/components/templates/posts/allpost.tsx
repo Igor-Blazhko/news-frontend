@@ -34,20 +34,12 @@ export const AllPosts = () => {
                 Фильтр:{filter} <br />
                 <Button onClick={ dropFilter }>Сбросить</Button>
             </div>} */}
-            <div>
+            <section>
                 { data && 
                     data.posts
-                        .map( (post:Post) => <OnePost 
-                            key={post.author.login + post.id + Math.random()*100}
-                            id={post.id}
-                            article={post.article}
-                            text={post.text}
-                            tags={post.tags} 
-                            author={post.author}
-                            createdAt ={post.createdAt.substring(0,10)} 
-                        /> )
+                        .map( (post:Post) => <OnePost {...post} key={post.id}/> )
                 }
-            </div>
+            </section>
                 {data.countPage && <ButtonsPagination countPage={data.countPage} selectPage={selectPage} selectedPage={1}/>}
         </section>
 

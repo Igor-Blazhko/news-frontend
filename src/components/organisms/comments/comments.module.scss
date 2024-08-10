@@ -1,0 +1,28 @@
+.comments {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-sizing: border-box;
+
+    & h3{
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    & textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        resize: vertical;
+        transition: border-color 0.3s ease;
+        box-sizing: border-box;
+
+        &:focus{
+            border-color: #888;
+        }
+    }
+}

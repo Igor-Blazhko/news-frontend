@@ -1,0 +1,12 @@
+.comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fafafa;
+    box-sizing: border-box;
+
+    & p {
+        font-size: 1.2em;
+    }
+}

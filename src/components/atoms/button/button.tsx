@@ -1,14 +1,15 @@
-import { FC, ReactNode, useInsertionEffect } from "react"
+import { FC, MouseEventHandler, ReactNode, useInsertionEffect } from "react"
 
 interface Props{
     children: ReactNode,
     style?: Styles,
     widthScale?: number,
     heightScale?: number,
+    onClick?: MouseEventHandler<HTMLButtonElement>,
 }
 export type Styles = 'dark' | 'white';
 
-export const Button: FC<Props> = ({children, style, widthScale, heightScale}) => {
+export const Button: FC<Props> = ({children, style, widthScale, heightScale, onClick}) => {
     const className = `buttonClass-${Math.round(Math.random() * 1000)}`;
 
     useInsertionEffect(()=>{
@@ -28,5 +29,5 @@ export const Button: FC<Props> = ({children, style, widthScale, heightScale}) =>
         };
     }, [className, style, widthScale, heightScale]);
 
-    return <button className={`${className} castom`}>{children}</button>
+    return <button className={`${className} castom`} onClick={onClick}>{children}</button>
 }

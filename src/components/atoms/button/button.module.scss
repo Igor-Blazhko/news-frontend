@@ -7,6 +7,9 @@ button.castom{
     text-decoration: none;
     margin: 5px;
     padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     
     &:hover {

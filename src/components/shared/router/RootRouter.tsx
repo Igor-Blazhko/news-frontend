@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import Posts from "../../pages/posts";
 import Auth from "../../pages/auth";
 import { Path } from "../constants/routerPath";
 import Post from "../../pages/openPost";
@@ -7,6 +6,7 @@ import CreatePost from "../../pages/createPost";
 import Profile from "../../pages/Profile";
 import Users from "../../pages/users";
 import WithAuth from "../HOCs/withAuth";
+import { Posts } from "../../pages/posts";
 
 const RootRouter = () => {
     return(
